@@ -1,0 +1,319 @@
+@font-face {
+	font-family: bold;
+	src: url('/fonts/Asap-Bold.ttf');
+  }
+  
+  @font-face {
+	font-family: normal;
+	src: url('/fonts/Asap-Regular.ttf');
+  }
+  
+*{
+	font-family : normal;
+	font-size: 16px;
+	
+	--bg-color : #171d31;
+
+	--primary-color : #7367f0;
+	--secondary-color : #283046;
+	--tertiary-color : #108F64;
+	--quaternary-color : #161d31;
+
+	--btn-primary-color : #7367f0;
+	--btn-secondary-color : #161d31;
+	--warning-color : #ff9f43;
+	--danger-color : #ea5455;
+	--success-color : #28c76f;
+
+	--text-primary-color : #283046;
+	--text-secondary-color : #d0d2d6;
+	--text-tertiary-color : #b4b7bd;
+
+	--border-primary-color : #404656;
+	--border-secondary-color : #3b4253;
+	--border-tertiary-color : #283046;
+  }
+  
+  /* Element Level Styles - Start */
+  
+body {
+	margin:0;
+	font-family : normal;
+	background-color: var(--bg-color);
+}
+
+/** Utility Classes **/
+
+.flex{
+	display: flex;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+
+.flex-row{
+	flex-direction: row;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.relative{
+	position: relative;
+}
+
+.fixed{
+	position : fixed ;
+}
+
+.text-primary{
+	color : var(--primary-color);
+}
+
+.text-white{
+	color: white;
+}
+
+.text-light{
+	font-weight: 300;
+}
+
+.text-bold{
+	font-weight: 500;
+}
+
+.text-boldest{
+	font-weight: 900;
+}
+
+.justify-space-between{
+	justify-content: space-between;
+}
+
+.justify-space-around{
+	justify-content: space-around;
+}
+
+.align-center{
+	align-items: center;
+}
+
+.align-stretch{
+	align-items: stretch;
+}
+
+.align-end{
+	align-items: flex-end;
+}
+
+
+.justify-center{
+	justify-content: center;
+}
+
+.grow{
+	flex-grow: 1;
+}
+
+.border-box{
+	box-sizing: border-box;
+}
+
+.text-underline{
+	text-decoration: underline;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.justify-start{
+	justify-content: flex-start;
+}
+
+.justify-end{
+	justify-content: flex-end;
+}
+
+.bg-white{
+	background-color: white;
+}
+
+.bg-transparent{
+	background-color: transparent;
+}
+
+.bg-secondary{
+	background-color: var(--secondary-color);
+}
+
+.bg-primary{
+	background-color: var(--primary-color);
+}
+
+.border-primary{
+	border : 2px solid  var(--primary-color);
+}
+
+.border-around-white{
+	border: 2px solid #d0d2d6 !important;
+}
+
+.bg-dark{
+	background-color: var(--dark-color);
+}
+
+.border-bottom-primary{
+	border-bottom : 2px solid  var(--primary-color);
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+
+.option{
+	padding: 0.5rem;
+	outline: none;
+}
+
+.task_name{
+	width: 55% !important;
+}
+
+.component_name{
+	width: 30% !important;
+}
+
+.component_type , .component_version , .component_date{
+	width: 15% !important;
+}
+
+.component_parent_name{
+	width: 25% !important;
+}
+
+.task_start_date,.task_end_date{
+	width: 15% !important;
+}
+
+.task_status{
+	width: 15% !important;
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+/** Status Classes Start **/
+
+.Not-Started{
+	background-color: #ea545520;
+    color: #ea5455;
+}
+
+.In-Progress{
+	background-color: #ff9f4320;
+    color: #ff9f43;
+}
+
+.Completed{
+	background-color: #28c76f20;
+    color: #28c76f;
+}
+
+/** Status Classes End **/
+
+/** Component Type Classes Start **/
+
+.Component-Type{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.Apex-Class{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.LWC{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.Omniscript{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.Integration-Procedure{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.Dataraptor{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.Custom-Field{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.Page-Layout{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.Lightning-Record-Type{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.Custom-Button{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+.Flow{
+	background-color: #7367f020;
+    color: #7367f0;
+}
+
+/** Component Type Classes End **/
+
+/** Badge Class Start **/
+.Bullet-Not-Started{
+	background-color: #ea5455;
+}
+
+.Bullet-In-Progress{
+	background-color: #ff9f43;
+}
+
+.Bullet-Completed{
+    background-color: #28c76f;
+}
+/** Badge Class End **/
+
+.badge{
+	font-size: 1.5rem;
+}
+
+.badge-not-started{
+	background-color: #ea545520;
+	color: #ea5455;
+}
+
+.badge-in-progress{
+	background-color: #ff9f4320;
+	color: #ff9f43;
+}
+
+.badge-completed{
+	background-color: #28c76f20;
+	color: #28c76f;
+}

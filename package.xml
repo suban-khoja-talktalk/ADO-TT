@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+  <types>
+    <members>ApiController</members>
+    <members>ApiRequestUtility</members>
+    <members>ApiService</members>
+    <members>CalloutService</members>
+    <name>ApexClass</name>
+  </types>
+  
+  <types>
+    <members>Api_Info__mdt.contentType__c</members>
+    <members>Database_Setting__mdt.root_id__c</members>
+    <members>Database_Setting__mdt.Token__c</members>
+    <members>User_Mapping__mdt.file_id__c</members>
+    <members>User_Mapping__mdt.user_id__c</members>
+    <name>CustomField</name>
+  </types>
+
+  <types>
+    <members>Origin</members>
+    <name>CustomLabel</name>
+  </types>
+
+  <types>
+    <members>CustomLabels</members>
+    <name>CustomLabels</name>
+  </types>
+
+  <types>
+    <members>Api_Info.createTask</members>
+    <members>Api_Info.deleteTask</members>
+    <members>Api_Info.getUserTasks</members>
+    <members>Api_Info.updateTaskStatus</members>
+    <members>Api_Info.updateTaskTitleAndNote</members>
+    <members>Database_Setting.default</members>
+    <members>User_Mapping.USER_1dYcckcWpjc8G0eCXvpLQWNA5ZX2</members>
+    <name>CustomMetadata</name>
+  </types>
+
+  <types>
+    <members>Api_Info__mdt</members>
+    <members>Database_Setting__mdt</members>
+    <members>User_Mapping__mdt</members>
+    <name>CustomObject</name>
+  </types>
+  
+  <types>
+    <members>app</members>
+    <name>CustomSite</name>
+  </types>
+
+  <types>
+    <members>Dynalist</members>
+    <name>NamedCredential</name>
+  </types>
+ 
+  <types>
+    <members>Admin</members>
+    <name>Profile</name>
+  </types>
+
+  <version>52.0</version>
+  
+</Package>
